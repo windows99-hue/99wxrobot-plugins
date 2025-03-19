@@ -8,7 +8,7 @@
 
 在这个储存库中，每个插件都有属于它们自己的文件夹
 
-把您想要安装插件的文件夹中的所有文件放入99微信机器人的`plugins`文件夹中，然后重启程序，检查他们是否工作正常
+把您想要安装插件的文件夹中的所有文件放入99微信机器人的`plugin`文件夹中，然后重启程序，检查他们是否工作正常
 
 ## 让这更美好
 
@@ -16,26 +16,28 @@
 
 万分感谢您对此程序作出的贡献！
 
+详细的插件编写修改方式方式请查看[99wxrobot](https://github.com/windows99-hue/99wxrobot)
+
 -----------------------------------------
-
-
 
 # 99wxrobot Plugins
 
-This repository is the plugins by myself for [99wxrobot](https://github.com/windows99-hue/99wxrobot).
+This repository contains plugins I have created for [99wxrobot](https://github.com/windows99-hue/99wxrobot).
 
-I will update this repository when I made something new.
+I will update this repository whenever I create something new.
 
 ## Installation
 
-In this repository, every plugin has their own directory.
+In this repository, each plugin has its own directory.
 
-To use it, you need to put all of the files in the directory into the `plugins` folder of 99wxrobot.
+To use a plugin, copy all the files from its directory into the `plugin` folder of 99wxrobot.
 
-After that, restart the programm, and check it out.
+After that, restart the program and check it out.
 
 ## Share
 
-If you have your own plugins and you hope to open source it, welcome to send a pull request or issue to me, I will add your plugins into this repository.
+If you have your own plugins and would like to open-source them, feel free to submit a pull request or issue. I will add your plugins to this repository.
 
-Thank you very much.
+Thank you very much!
+
+**Tip:** Instructions for creating or modifying a plugin can be found [here](https://github.com/windows99-hue/99wxrobot).
