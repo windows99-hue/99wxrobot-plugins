@@ -1,0 +1,25 @@
+import win32api
+import win32con
+import win32gui
+from winrt.windows.media.control import GlobalSystemMediaTransportControlsSessionManager as MediaManager
+
+async def get_current_media_info():
+    # 获取媒体会话管理器
+    sessions = await MediaManager.request_async()
+
+    # 获取当前活动的媒体会话
+    current_session = sessions.get_current_session()
+    if current_session:
+        # 获取媒体信息
+        media_info = await current_session.try_get_media_properties_async()
+        title = media_info.title
+        artist = media_info.artist
+        return f"99正在听: {artist} 的 {title}"
+    else:
+        return "No media is currently playing."
+
+# 由于 winrt 是异步的，我们需要运行一个异步事件循环
+import asyncio
+
+result = asyncio.run(get_current_media_info())
+print(result)
